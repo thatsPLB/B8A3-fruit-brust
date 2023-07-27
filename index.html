@@ -31,44 +31,55 @@
     }
 </style>
 </head>
-<body class="font-lato">
-    <header class="md:container md:mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="flex-1">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li><a>About Us</a></li>
-                      <li><a>Shop</a></li>
-                      <li><a>All Fruits</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu text-base menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                  </ul>
-                  <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Fruit Burst</a>
-                  <img src="images/logo.png" alt="">
-                </div>
+<body class="font-lato ">
+    <header class="w-10/12 m-auto mt-4">
+      <div class="navbar h-24 md:bg-[#F85559] bg-[#FFF] rounded-full flex justify-between items-center text-[#fff]">
+        <div>
+          <ul class="md:flex space-x-3 px-3 hidden">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">All Fruites</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <img src="./images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case text-xl md:text-[#fff] text-[#000]">Fruite Burst</a>
+        </div>
+        <div>
+          <label class="relative md:block hidden mr-4">
+            <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
+        
+
+              <input
+              class="peer h-full w-full outline-none text-sm text-gray-700 pr-2 ml-3"
+              type="text"
+              id="search"
+              placeholder="Search something.." /> 
+              <div class="grid place-items-center h-full w-12 text-gray-300 cursor-pointer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M19 19L13.803 13.803M13.803 13.803C15.2096 12.3965 15.9998 10.4887 15.9998 8.49955C15.9998 6.51035 15.2096 4.60262 13.803 3.19605C12.3964 1.78947 10.4887 0.999268 8.49949 0.999268C6.51029 0.999268 4.60256 1.78947 3.19599 3.19605C1.78941 4.60262 0.999207 6.51035 0.999207 8.49955C0.999207 10.4887 1.78941 12.3965 3.19599 13.803C4.60256 15.2096 6.51029 15.9998 8.49949 15.9998C10.4887 15.9998 12.3964 15.2096 13.803 13.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
               </div>
-        </nav>
+            </div>
+          </label>
+          <label for="">
+            <svg class="md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </label>
+        </div>
+      </div> 
     </header>
-  <main>
-    <section class="py-8">
+  <main class="">
+    <section class="py-8 w-10/12 m-auto">
       <div class="carousel">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="/images/banner1.png" class="w-full"/>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
             <img src="/images/banner2.png" class="w-full" />
@@ -91,10 +102,10 @@
               <a href="#slide1" class="btn btn-circle">❯</a>
             </div>
           </div>
-        </div>
+        
       </div>
       <!-- item container -->
-      <div class="flex more-item-container w-4/5 h-65 mx-auto justify-between mt-21 items-center bg-slate-100 p-5">
+      <div class="flex m  ore-item-container w-4/5 h-65 mx-auto justify-between bg-[#fff] relative bottom-20 mt-21 items-center shadow-lg p-5">
         <div class="text-center">
           <img class="w[80%] mx-auto lg:w-full" src="images/fruit1.png" alt="">
           <p class="font-lato">Strawberry</p>
@@ -118,7 +129,7 @@
         </div>
     </section>
     <!-- deal of section -->
-    <section class="my-24">
+    <section class="mt-24 mb-0 w-10/12 m-auto">
       <h3 class="text-5xl mb-12 font-semibold text-justify">Deal of the day</h3>
       <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       <div class="flex gap-5 justify-end">
@@ -243,14 +254,14 @@
             </div>
           </div>
         </div>
+      </section>
         <div class="text-center items-center">
           <button class="btn bg-[#f85559] font-bold border-none text-[#fff] hover:bg-[#f85559]">
             Shop N0w
           </button>
         </div>
-      </section>
  <!--Team-section--- -->
- <section class="py-10" id="">
+ <section class="py-10 w-10/12 m-auto" id="">
   <div class="bg-[#000000b3] bg-blend-darken bg-[url('./images/banner1.png')] w-full lg:h-[500px] bg-center rounded-lg text-[#FFF] flex items-center justify-center flex-col text-center py-5 lg:py-0">
     <div>
       <h1 class="text-4xl font-extrabold">Meet the team section</h1>
@@ -305,7 +316,7 @@
       </div>
     </div>
 </section>
-<footer>
+<footer class="">
   <div class="logo flex">
     <img src="./images/logo.png" />
     <h1><span style="color:white">Fruit Burst</h1>
