@@ -74,8 +74,9 @@
   <main class="">
     <section class="py-8 w-10/12 m-auto">
       <div class="carousel">
-        <div id="slide1" class="carousel-item relative w-full">
-          <img src="/images/banner1.png" class="w-full"/>
+        <div id="slide1" class="carousel-item relative w-full bg-[url('./images/banner1.png')]">
+          <h3 class="text-center md:text-start text-base md:text-xl text-white font-medium py-4">Exotic tastes at your
+            <br>doorstep</h3>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
@@ -83,6 +84,8 @@
           </div>
           <div id="slide2" class="carousel-item relative w-full">
             <img src="/images/banner2.png" class="w-full" />
+            <h3 class="text-3xl md:text-6xl  text-white font-medium py-4">Exotic tastes at your
+              <br>doorstep</h3>
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
               <a href="#slide1" class="btn btn-circle">❮</a> 
               <a href="#slide3" class="btn btn-circle">❯</a>
@@ -184,8 +187,34 @@
               <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-11" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
+            <div class="detail">
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="" onclick="my_modal_1.showModal()">Details</button>
+            <dialog id="my_modal_1" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="./images/fruit6.png" alt="">
+                  <h3 class="text-3xl font-bold">Apple</h3>
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="213" height="32" viewBox="0 0 213 32" fill="none">
+                    <path d="M61.1369 0L67.202 9.34122L77.9603 12.2229L70.9505 20.8779L71.5343 32L61.1369 28.0078L50.7395 32L51.3233 20.8779L44.3135 12.2229L55.0718 9.34122L61.1369 0Z" fill="#F85559"/>
+                    <path d="M61.2051 0L67.2702 9.34122L78.0285 12.2229L71.0187 20.8779L71.6025 32L61.2051 28.0078V0Z" fill="#FBC0A8"/>
+                    <path d="M16.8234 0L22.8886 9.34122L33.6468 12.2229L26.637 20.8779L27.2208 32L16.8234 28.0078L6.42603 32L7.00981 20.8779L0 12.2229L10.7583 9.34122L16.8234 0Z" fill="#F85559"/>
+                    <path d="M106.157 0L112.222 9.34122L122.98 12.2229L115.97 20.8779L116.554 32L106.157 28.0078L95.7594 32L96.3431 20.8779L89.3333 12.2229L100.092 9.34122L106.157 0Z" fill="#FBC0A8"/>
+                    <path d="M195.49 0L201.555 9.34122L212.313 12.2229L205.304 20.8779L205.887 32L195.49 28.0078L185.093 32L185.676 20.8779L178.667 12.2229L189.425 9.34122L195.49 0Z" fill="#FBC0A8"/>
+                    <path d="M151.49 0L157.555 9.34122L168.313 12.2229L161.304 20.8779L161.887 32L151.49 28.0078L141.093 32L141.676 20.8779L134.667 12.2229L145.425 9.34122L151.49 0Z" fill="#FBC0A8"/>
+                  </svg>
+                  <div class="modal-action">
+                    <button class="btn">Close</button>
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
+        
         <!-- second review-->
         <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
           <figure class="px-10 pt-10">
@@ -207,8 +236,32 @@
               <input type="radio" name="rating-21" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-22" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
+            <button class="" onclick="my_modal_2.showModal()">Details</button>
+            <dialog id="my_modal_2" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="./images/fruit7.png" alt="">
+                  <h3 class="text-3xl font-bold">Orange</h3>
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="213" height="32" viewBox="0 0 213 32" fill="none">
+                    <path d="M61.1369 0L67.202 9.34122L77.9603 12.2229L70.9505 20.8779L71.5343 32L61.1369 28.0078L50.7395 32L51.3233 20.8779L44.3135 12.2229L55.0718 9.34122L61.1369 0Z" fill="#F85559"/>
+                    <path d="M61.2051 0L67.2702 9.34122L78.0285 12.2229L71.0187 20.8779L71.6025 32L61.2051 28.0078V0Z" fill="#FBC0A8"/>
+                    <path d="M16.8234 0L22.8886 9.34122L33.6468 12.2229L26.637 20.8779L27.2208 32L16.8234 28.0078L6.42603 32L7.00981 20.8779L0 12.2229L10.7583 9.34122L16.8234 0Z" fill="#F85559"/>
+                    <path d="M106.157 0L112.222 9.34122L122.98 12.2229L115.97 20.8779L116.554 32L106.157 28.0078L95.7594 32L96.3431 20.8779L89.3333 12.2229L100.092 9.34122L106.157 0Z" fill="#FBC0A8"/>
+                    <path d="M195.49 0L201.555 9.34122L212.313 12.2229L205.304 20.8779L205.887 32L195.49 28.0078L185.093 32L185.676 20.8779L178.667 12.2229L189.425 9.34122L195.49 0Z" fill="#FBC0A8"/>
+                    <path d="M151.49 0L157.555 9.34122L168.313 12.2229L161.304 20.8779L161.887 32L151.49 28.0078L141.093 32L141.676 20.8779L134.667 12.2229L145.425 9.34122L151.49 0Z" fill="#FBC0A8"/>
+                  </svg>
+                  <div class="modal-action">
+                    <button class="btn">Close</button>
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
           </div>
+          
         </div>
+        
         <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit8.png" alt="" class="rounded-xl" />
@@ -229,7 +282,28 @@
               <input type="radio" name="rating-32" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-33" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
-            
+            <button class="" onclick="my_modal_3.showModal()">Details</button>
+            <dialog id="my_modal_3" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="./images/fruit8.png" alt="">
+                  <h3 class="text-3xl font-bold">Red Dragon</h3>
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="213" height="32" viewBox="0 0 213 32" fill="none">
+                    <path d="M61.1369 0L67.202 9.34122L77.9603 12.2229L70.9505 20.8779L71.5343 32L61.1369 28.0078L50.7395 32L51.3233 20.8779L44.3135 12.2229L55.0718 9.34122L61.1369 0Z" fill="#F85559"/>
+                    <path d="M61.2051 0L67.2702 9.34122L78.0285 12.2229L71.0187 20.8779L71.6025 32L61.2051 28.0078V0Z" fill="#FBC0A8"/>
+                    <path d="M16.8234 0L22.8886 9.34122L33.6468 12.2229L26.637 20.8779L27.2208 32L16.8234 28.0078L6.42603 32L7.00981 20.8779L0 12.2229L10.7583 9.34122L16.8234 0Z" fill="#F85559"/>
+                    <path d="M106.157 0L112.222 9.34122L122.98 12.2229L115.97 20.8779L116.554 32L106.157 28.0078L95.7594 32L96.3431 20.8779L89.3333 12.2229L100.092 9.34122L106.157 0Z" fill="#FBC0A8"/>
+                    <path d="M195.49 0L201.555 9.34122L212.313 12.2229L205.304 20.8779L205.887 32L195.49 28.0078L185.093 32L185.676 20.8779L178.667 12.2229L189.425 9.34122L195.49 0Z" fill="#FBC0A8"/>
+                    <path d="M151.49 0L157.555 9.34122L168.313 12.2229L161.304 20.8779L161.887 32L151.49 28.0078L141.093 32L141.676 20.8779L134.667 12.2229L145.425 9.34122L151.49 0Z" fill="#FBC0A8"/>
+                  </svg>
+                  <div class="modal-action">
+                    <button class="btn">Close</button>
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
         <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
@@ -252,6 +326,28 @@
               <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
               <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
             </div>
+            <button class="" onclick="my_modal_4.showModal()">Details</button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="./images/fruit9.png" alt="">
+                  <h3 class="text-3xl font-bold">Banana</h3>
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="213" height="32" viewBox="0 0 213 32" fill="none">
+                    <path d="M61.1369 0L67.202 9.34122L77.9603 12.2229L70.9505 20.8779L71.5343 32L61.1369 28.0078L50.7395 32L51.3233 20.8779L44.3135 12.2229L55.0718 9.34122L61.1369 0Z" fill="#F85559"/>
+                    <path d="M61.2051 0L67.2702 9.34122L78.0285 12.2229L71.0187 20.8779L71.6025 32L61.2051 28.0078V0Z" fill="#FBC0A8"/>
+                    <path d="M16.8234 0L22.8886 9.34122L33.6468 12.2229L26.637 20.8779L27.2208 32L16.8234 28.0078L6.42603 32L7.00981 20.8779L0 12.2229L10.7583 9.34122L16.8234 0Z" fill="#F85559"/>
+                    <path d="M106.157 0L112.222 9.34122L122.98 12.2229L115.97 20.8779L116.554 32L106.157 28.0078L95.7594 32L96.3431 20.8779L89.3333 12.2229L100.092 9.34122L106.157 0Z" fill="#FBC0A8"/>
+                    <path d="M195.49 0L201.555 9.34122L212.313 12.2229L205.304 20.8779L205.887 32L195.49 28.0078L185.093 32L185.676 20.8779L178.667 12.2229L189.425 9.34122L195.49 0Z" fill="#FBC0A8"/>
+                    <path d="M151.49 0L157.555 9.34122L168.313 12.2229L161.304 20.8779L161.887 32L151.49 28.0078L141.093 32L141.676 20.8779L134.667 12.2229L145.425 9.34122L151.49 0Z" fill="#FBC0A8"/>
+                  </svg>
+                  <div class="modal-action">
+                    <button class="btn">Close</button>
+                    <button class="btn">Buy Now</button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
       </section>
