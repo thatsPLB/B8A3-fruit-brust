@@ -63,42 +63,41 @@
     </header>
   <main>
     <section class="py-8">
-      <div class="carousel w-full rounded-md h-[600px]">
+      <div class="carousel">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="/images/banner1.png" class="w-full"/>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                  </div> 
-                  <div id="slide2" class="carousel-item relative w-full">
-                    <img src="/images/banner2.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide1" class="btn btn-circle">❮</a> 
-                      <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                  </div> 
-                  <div id="slide3" class="carousel-item relative w-full">
-                    <img src="/images/banner3.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide2" class="btn btn-circle">❮</a> 
-                      <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
-                  </div> 
-                  <div id="slide4" class="carousel-item relative w-full">
-                    <img src="/images/banner4.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                      <a href="#slide3" class="btn btn-circle">❮</a> 
-                      <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                  </div>
-                </div>
-  
-        <!-- item container -->
-        <div class="flex more-item-container w-4/5 h-65 mx-auto justify-between mt-21 items-center bg-slate-100 p-5">
-          <div class="text-center">
-            <img class="w[80%] mx-auto lg:w-full" src="images/fruit1.png" alt="">
-            <p class="font-lato">Strawberry</p>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- item container -->
+      <div class="flex more-item-container w-4/5 h-65 mx-auto justify-between mt-21 items-center bg-slate-100 p-5">
+        <div class="text-center">
+          <img class="w[80%] mx-auto lg:w-full" src="images/fruit1.png" alt="">
+          <p class="font-lato">Strawberry</p>
           </div>
           <div class="text-center">
             <img src="images/fruit2.png" alt="">
@@ -118,33 +117,36 @@
           </div>
         </div>
     </section>
-    
-      <!-- deal of section -->
-      <section class="my-24">
-        <h3 class="text-5xl mb-12 font-semibold text-justify">Deal of the day</h3>
-        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-        <div class="flex gap-5 justify-end">
-          <div>
-            <span class="countdown font-mono text-4xl">
-              <span style="--value:15;"></span>
+    <!-- deal of section -->
+    <section class="my-24">
+      <h3 class="text-5xl mb-12 font-semibold text-justify">Deal of the day</h3>
+      <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+      <div class="flex gap-5 justify-end">
+        <div>
+          <span class="countdown font-mono text-4xl">
+            <span style="--value:15;">
             </span>
+          </span>
             days
           </div> 
           <div>
             <span class="countdown font-mono text-4xl">
-              <span style="--value:10;"></span>
+              <span style="--value:10;">
+              </span>
             </span>
             hours
           </div> 
           <div>
             <span class="countdown font-mono text-4xl">
-              <span style="--value:24;"></span>
+              <span style="--value:24;">
+              </span>
             </span>
             min
           </div> 
           <div>
             <span class="countdown font-mono text-4xl">
-              <span style="--value:35;"></span>
+              <span style="--value:35;">
+              </span>
             </span>
             sec
           </div>
@@ -153,7 +155,7 @@
           <!-- first review -->
           <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
             <figure class="px-10 pt-10 ">
-              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+              <img src="/images/fruit6.png" alt="" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -174,9 +176,9 @@
           </div>
         </div>
         <!-- second review-->
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+            <img src="/images/fruit7.png" alt="" class="rounded-xl" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
@@ -196,7 +198,7 @@
             </div>
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
           </figure>
@@ -219,7 +221,7 @@
             
           </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-100 py-10 px-8 border-2 text-center rounded-lg shadow-xl">
           <figure class="px-10 pt-10">
             <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
           </figure>
